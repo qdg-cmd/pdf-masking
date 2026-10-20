@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pdf 마스킹 시스템</title>
+    <meta name="theme-color" content="#1e293b" />
+    <meta name="description" content="100% 브라우저 로컬 구동 PDF 개인정보(PII) 영구 마스킹 웹 애플리케이션" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="apple-touch-icon" href="./icon-192.png" />
+    <!-- Korean Fonts: Pretendard for clean modern UI -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script type="module" crossorigin src="./assets/index-BvKgVWby.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-1um4_1Eb.css">
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased font-sans">
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js').catch((err) => {
+            console.log('SW registration skipped:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

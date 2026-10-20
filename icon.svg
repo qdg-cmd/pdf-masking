@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="100" fill="#0f172a"/>
+  
+  <!-- Document Sheet -->
+  <path d="M140 100 H300 L380 180 V410 H140 Z" fill="#ffffff" rx="10"/>
+  <path d="M300 100 V180 H380 Z" fill="#cbd5e1"/>
+  
+  <!-- Masking bars on document -->
+  <rect x="180" y="210" width="160" height="24" rx="4" fill="#1e293b"/>
+  <rect x="180" y="250" width="110" height="20" rx="4" fill="#ef4444"/>
+  <rect x="180" y="285" width="180" height="16" rx="4" fill="#94a3b8"/>
+  <rect x="180" y="315" width="140" height="16" rx="4" fill="#94a3b8"/>
+
+  <!-- Shield Badge with Checkmark -->
+  <g transform="translate(280, 260)">
+    <path d="M90 20 C90 100 0 140 0 140 C0 140 -90 100 -90 20 C-90 20 -40 20 0 0 C40 20 90 20 90 20 Z" fill="url(#shieldGrad)"/>
+    <!-- Checkmark inside shield -->
+    <path d="M-30 60 L-10 80 L35 35" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
